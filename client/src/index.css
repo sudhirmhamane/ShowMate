@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+  --color-bg: #121212; /* Deep dark background */
+  --color-surface: #1E1E1E; /* Card or section background */
+  --color-text: #E0E0E0; /* Light text */
+  --color-text-muted: #B0B0B0; /* Muted subtext */
+  --color-primary: #ff3c6f; /* Vibrant accent (similar to your original) */
+  --color-primary-dull: #b92f57; /* Dull variant */
+  --color-accent: #ff9800; /* Optional secondary accent (buttons, hover) */
+}
+
+
+*{
+  font-family: "Outfit", sans-serif;
+  scrollbar-width: thin;
+  scrollbar-color: #787777 #1e1e1e;
+}
+
+body{
+  color: white;
+  background-color: #09090D;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+::-webkit-calendar-picker-inducator {
+  filter: invert(1);
+}
