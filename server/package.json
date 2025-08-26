@@ -6,7 +6,12 @@
   "type": "module",
   "scripts": {
     "server": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "echo 'No build step required for Node.js'",
+    "test": "echo 'Tests not implemented yet'",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "author": "sudhir mhamane",
   "license": "ISC",
@@ -16,11 +21,30 @@
     "cloudinary": "^2.6.1",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0",
+    "express": "^4.18.2",
     "inngest": "^3.39.1",
-    "mongoose": "^8.16.0"
+    "mongoose": "^8.16.0",
+    "uuid": "^10.0.0",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.3.0",
+    "compression": "^1.7.4",
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
-  }
+    "nodemon": "^3.1.10",
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "movie",
+    "ticket",
+    "booking",
+    "mern",
+    "express",
+    "mongodb",
+    "clerk",
+    "inngest"
+  ]
 }
